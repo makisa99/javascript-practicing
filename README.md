@@ -1,2 +1,2 @@
 # javascript-practicing
- Javascript projects
+Coding many different stuff using JS
