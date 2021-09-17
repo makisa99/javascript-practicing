@@ -1,16 +1,15 @@
 // document.getElementById("counter-in").innerText = 5;
 let count = 0;
 let cntr = document.getElementById("counter-in");
-let savebtn;
+let saveh2 = document.getElementById("saved");
 
 function increment() {
   count++;
-  cntr.innerText = count;
+  cntr.textContent = count;
 }
 
 function save() {
-  savebtn = document.getElementById("saved");
-  savebtn.innerText = savebtn.innerHTML + count + " ";
+  saveh2.textContent += " " + count;
   count = 0;
-  cntr.innerText = count;
+  cntr.textContent = count;
 }
