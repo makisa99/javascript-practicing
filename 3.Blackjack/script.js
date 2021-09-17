@@ -32,7 +32,7 @@ function startGame() {
 }
 
 function renderGame() {
-  cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1];
+  cardsEl.textContent = "Cards: "; //todo: render cards to be shown, 3:09;
   sumEl.textContent = "Sum: " + sum;
   checkSum();
 }
@@ -40,6 +40,8 @@ function renderGame() {
 function newCardF() {
   newCard = Math.floor(Math.random() * 10 + 2);
   sum += newCard;
+  cards.push(newCard);
+  console.log(cards);
 
   // cardsEl.textContent += " " + newCard;
   // sumEl.textContent = "Sum: " + sum;
